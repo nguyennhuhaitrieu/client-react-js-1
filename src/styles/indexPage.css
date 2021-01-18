@@ -1,0 +1,78 @@
+.new-film-of-season{
+  /* box-shadow: -1rem 0 3rem #fff; */
+  height: 600px;
+  margin: auto;
+  width: 100%;
+}
+
+.new-film-of-season h1{
+  padding-top: 2%;
+  position: absolute;
+  color: #fff;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 36px;
+  margin: 0;
+}
+
+.new-film {
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.new-film h1 {
+  padding-top: 1%;
+  position: absolute;
+  color: #fff;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 36px;
+  margin: 0;
+}
+.index-page-container{
+  margin-top: 90px;
+}
+
+.title-film {
+  padding-top: 1%;
+  position: absolute;
+  color: #fff;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 36px;
+  margin: 0;
+}
+
+.new-film:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  display: block;
+  background-image: -moz-linear-gradient(90deg, #ff55a5 0%, #ff5860 100%);
+  background-image: -webkit-linear-gradient(90deg, #ff55a5 0%, #ff5860 100%);
+  background-image: -ms-linear-gradient(90deg, #ff55a5 0%, #ff5860 100%);
+  background-image: linear-gradient(90deg, #ff55a5 0%, #ff5860 100%);
+  -webkit-box-shadow: 0 0 20px 0 rgba(255,88,96,0.5);
+  box-shadow: 0 0 20px 0 rgba(255,88,96,0.5);
+}
+
+.film-by-level-container{
+  box-shadow: -1rem 0 3rem #fff;
+}
+.details-title{
+  display: flex;
+  line-height: 100%;
+  margin-bottom: 30px;
+  font-size: 36px;
+  color: #fff;
+  font-weight: 300;
+  padding-top: 42px;
+}

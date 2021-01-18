@@ -1,0 +1,233 @@
+.test-container{
+  margin-top: 120px;
+  color: #fff;
+}
+
+.test-title {
+  position: relative;
+  /* display: inline-block; */
+  font-family: playfair display;
+  font-size: 40px;
+  color: #fff;
+}
+
+.test-title-remind{
+  position: relative;
+  font-family: playfair display;
+  font-size: 30px;
+  color: #ff8282e6;
+  text-align: center;
+}
+.test-title h2:before {
+  width: 100px;
+  bottom: -10px;
+  left: 50%;
+}
+.underlined-a {
+  text-decoration: none;
+  color: #fff;
+  padding-bottom: 0.15em;
+  box-sizing: border-box;
+  box-shadow: inset 0 -0.2em 0 aqua;
+  transition: 0.2s;
+}
+.underlined-a:hover {
+  color: #222;
+  box-shadow: inset 0 -2em 0 aqua;
+  transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.brk-btn {
+  position: relative;
+  background: none;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 0.2em solid #9f9fa9;
+  padding: 0.5em 1em;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.brk-btn:hover {
+  border: 0.2em solid #fff;
+  color: #fff;
+}
+
+.brk-btn::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 10%;
+  background: #222;
+  height: 0.3em;
+  right: 20%;
+  top: -0.21em;
+  transform: skewX(-45deg);
+  -webkit-transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
+  transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
+}
+.brk-btn::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 10%;
+  background: #222;
+  height: 0.3em;
+  left: 20%;
+  bottom: -0.25em;
+  transform: skewX(45deg);
+  -webkit-transition: all 0.45 cubic-bezier(0.86, 0, 0.07, 1);
+  transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
+}
+.brk-btn:hover::before {
+  right: 80%;
+}
+.brk-btn:hover::after {
+  left: 80%;
+}
+
+/*  */
+.question-title{
+  font-size: 23px;
+  font-weight: bold;
+  margin: 0 0 50px;
+}
+
+.answer-title{
+  letter-spacing: 0.2rem;
+  font-size: 17px;
+}
+
+.icon-question{
+  color: #ff5860;
+}
+/*  */
+.list-answer {
+  flex: 0 0 20rem;
+  padding: 3px 0px 0px 30px;
+}
+
+.list-answer__item {
+  position: relative;
+}
+.list-answer__item:hover > .label {
+  color: #009688;
+}
+.list-answer__item:hover > .label::before {
+  border: 0.5rem solid #009688;
+  /* margin-right: 2rem; */
+}
+
+.radio-btn {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+}
+.radio-btn:checked + .label {
+  color: #009688;
+}
+.radio-btn:checked + .label::before {
+  border: 0.5rem solid #009688;
+  background: #fff;
+}
+
+.list-answer__item label {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 0;
+  color: #fff;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.25s linear;
+}
+
+.list-answer__item label::before {
+  display: inline-block;
+  content: "";
+  height: 1.725rem;
+  width: 1.725rem;
+  margin-right: 0.625rem;
+  border: 0.5rem solid #fff;
+  border-radius: 50%;
+  transition: all 0.25s linear;
+}
+
+/*  */
+.btn--submit {
+  padding: 11px 36px;
+  font-size: 30px;
+  cursor: pointer;
+  position: relative;
+  border: 2px solid white;
+  outline: none;
+  color: white;
+  background-color: transparent;
+  margin: auto;
+  font-family: 'Merriweather', serif;
+  white-space: nowrap;
+  display: block;
+}
+.btn--future::after, .btn--future::before {
+  content: "";
+  position: absolute;
+  border: 2px solid white;
+  width: calc(100% + 15px);
+  height: 60px;
+  transition: 0.5s ease;
+}
+.btn--future::after {
+  top: -15px;
+  left: -15px;
+  border-right: none;
+  border-bottom: none;
+}
+.btn--future::before {
+  bottom: -15px;
+  right: -15px;
+  border-left: none;
+  border-top: none;
+}
+.btn--future:hover:after, .btn--future:hover:before {
+  width: calc(100% - 30px);
+  height: 80px;
+}
+
+.btn-brk-voca{
+  padding: 6px 5px 4px 11px;
+  border-radius: 15px;
+}
+.word_true{
+  color: #009688;
+  font-weight: bold;
+}
+
+.word_vi{
+  padding: 14px;
+}
+
+.error-test-form{
+  color: red;
+  font-weight: 600;
+  letter-spacing: 0.15rem;
+}
+
+.correct-answer{
+  color: red !important;
+}
+
+.btn-full-test{
+  text-align: center;
+  color: white !important;
+  font-family: 'Merriweather', serif;
+  white-space: nowrap;
+  background-color: rgba(43, 43, 49, 0.2);
+  font-size: 20px;
+  font-weight: bold;
+  width: 60%;
+}
+
+.btn-full-test:hover{
+  color: white !important;
+}

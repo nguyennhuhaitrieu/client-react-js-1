@@ -1,0 +1,154 @@
+.container-hotfilm {
+  position: absolute;
+  height: 400px;
+  width: 100%;
+  top: 100px;
+  display: flex;
+}
+
+.hot-film-title{
+  padding-top: 2%;
+  left: calc(30% - 300px);
+}
+
+.hot-film-title h1{
+  color: #fff;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 36px;
+  margin: 0;
+  /* padding-right: 70px; */
+}
+
+.card {
+  display: flex;
+  height: 350px;
+  background-color: #17141d;
+  box-shadow: -1rem 0 3rem #fff;
+  transition: 0.4s ease-out;
+  position: relative;
+  left: 0px;
+}
+
+.card:not(:first-child) {
+    margin-left: -50px;
+}
+
+.card:hover {
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
+}
+
+.card:hover ~ .card {
+  position: relative;
+  left: 50px;
+  transition: 0.4s ease-out;
+}
+
+.title {
+  width: 200px;
+  font-weight: 300;
+  position: absolute;
+  left: 20px;
+  top: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.title:hover{
+  overflow: visible;
+  width: 210px;
+  white-space: normal; 
+  color: #fff;
+  font-weight: 700;
+}
+
+.bar {
+  position: absolute;
+  top: 130px;
+  left: 20px;
+  height: 5px;
+  width: 150px;
+}
+
+.emptybar {
+  background-color: #2e3033;
+  width: 100%;
+  height: 100%;
+}
+
+.filledbar {
+  position: absolute;
+  top: 0px;
+  z-index: 3;
+  width: 0px;
+  height: 100%;
+  background: rgb(0,154,217);
+  background: linear-gradient(90deg, rgba(0,154,217,1) 0%, rgba(217,147,0,1) 65%, rgba(255,186,0,1) 100%);
+  transition: 0.6s ease-out;
+}
+
+.card:hover .filledbar {
+  width: 120px;
+  transition: 0.4s ease-out;
+}
+
+.circle {
+  position: absolute;
+  top: 150px;
+  left: calc(50% - 60px);
+}
+
+.stroke {
+  stroke: white;
+  stroke-dasharray: 360;
+  stroke-dashoffset: 360;
+  transition: 0.6s ease-out;
+}
+  
+  svg {
+    fill: #1b141d00;
+    stroke-width: 2px;
+  }
+  
+  .card:hover .stroke {
+    stroke-dashoffset: 100;
+    transition: 0.6s ease-out;
+  }
+
+  .card .card_image img {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+  }
+  .card .card_image {
+    width: inherit;
+    height: inherit;
+    border-radius: 40px;
+  }
+
+   .star-font{
+    margin-right: 5px;
+    color: #ff5860;
+  }
+
+  .card-discover-discover-filmcard{
+    -webkit-transition: 0.4s ease-out;
+    transition: 0.4s ease-out;
+    left: 0px;
+  }
+  .title-discover-film{
+    top: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .title-discover-film:hover{
+    overflow: visible;
+    white-space: normal;
+    color: #fff;
+    font-weight: 300;
+  }

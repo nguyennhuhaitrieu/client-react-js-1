@@ -1,0 +1,34 @@
+.img-post-modal{
+  margin-left: 12px;
+  /* width: 96%; */
+
+  border-radius: 12px;
+  max-height: 300px;
+}
+
+.input-file-modal {
+  display: block;
+  width: 96%;
+  padding: 17px 32px;
+  border: 0;
+  font-size: 15px;
+  font-style: italic;
+  line-height: 1;
+  color: #aeaeae;
+  background: #efefef;
+  outline: none;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.image-picture-movie{
+  display: flex;
+  width: 85%;
+}
+
+.error-modal {
+  color: red;
+  margin-left: 12px;
+  margin-top: .5rem;
+  margin-bottom: 5px;
+}
